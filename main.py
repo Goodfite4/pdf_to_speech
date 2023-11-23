@@ -4,44 +4,6 @@ from tkinter import filedialog
 from tkinter import *
 from os import remove
 
-# conv_pdf = open("text.pdf", "rb")
-#
-# pdf_reader = PyPDF2.PdfReader(conv_pdf)
-#
-# page_num = len(pdf_reader.pages)
-#
-# page = pdf_reader.pages[0]
-#
-# text = page.extract_text()
-#
-# self.engine = pyttsx3.init()
-#
-#
-# with open("pdf_content.txt", "w") as pdf_text:
-#
-#     pdf_text.write(text)
-#
-# """ RATE"""
-# rate = self.engine.getProperty('rate')   # getting details of current speaking rate
-# print(rate)                        # printing current voice rate
-# self.engine.setProperty('rate', 125)     # setting up new voice rate
-#
-#
-# """VOLUME"""
-# volume = self.engine.getProperty('volume')   # getting to know current volume level (min=0 and max=1)
-# print(volume)                          # printing current volume level
-# self.engine.setProperty('volume',1.0)    # setting up volume level  between 0 and 1
-#
-# """VOICE"""
-# voices = self.engine.getProperty('voices')       # getting details of current voice
-# # self.engine.setProperty('voice', voices[0].id)  # changing index, changes voices. o for male
-# self.engine.setProperty('voice', voices[0].id)   # changing index, changes voices. 1 for female
-#
-# self.engine.say("Hello World!")
-# self.engine.say('My current speaking rate is ' + str(rate))
-# self.engine.runAndWait()
-# self.engine.stop()
-
 class Root(Tk):
     def __init__(self):
         self.engine = pyttsx3.init()
